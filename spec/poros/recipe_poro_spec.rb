@@ -15,7 +15,7 @@ RSpec.describe 'Recipes PORO' do
 
     expect(final).to be_a RecipePoro
     expect(final.title).to eq(recipe_data[:recipe][:label])
-    expect(final.url).to eq(recipe_data[:recipe][:uri])
+    expect(final.url).to eq(recipe_data[:recipe][:url])
     expect(final.image).to eq(recipe_data[:recipe][:image])
     expect(final.country).to eq(country)
     expect(final.instance_variables).to eq(%i[@title @url @image @country])
