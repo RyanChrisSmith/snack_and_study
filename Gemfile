@@ -15,6 +15,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'jquery-rails'
 gem "net-http"
+gem 'jsonapi-serializer'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
