@@ -33,6 +33,26 @@ RSpec.describe 'Recipes API' do
         expect(recipe[:attributes][:image]).to be_a String
       end
     end
+
+    it 'returns an empty array when a blank entry for country is entered', :vcr do
+      get "/api/v1/recipes?country=''"
+
+      expect(response).to be_successful
+      recipes = JSON.parse(response.body, symbolize_names: true)
+
+      expect(recipes).to have_key(:data)
+      expect(recipes[:data]).to eq([])
+    end
+
+    it 'returns an empty array when a country that doesnt exist is entered', :vcr do
+      get "/api/v1/recipes?country=jlaksjedlfkajsldkfjalskdjflaksjdf"
+
+      expect(response).to be_successful
+      recipes = JSON.parse(response.body, symbolize_names: true)
+
+      expect(recipes).to have_key(:data)
+      expect(recipes[:data]).to eq([])
+    end
   end
 
 end

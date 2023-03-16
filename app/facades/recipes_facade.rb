@@ -5,6 +5,12 @@ class RecipesFacade
     collect_recipes(recipes, country)
   end
 
+  def self.random
+    country = RandomCountryService.random_search
+    recipes = RecipesService.find_recipes(country)
+    collect_recipes(recipes, country)
+  end
+
   def self.collect_recipes(recipes, country)
     recipes[:hits].map do |recipe_data|
       RecipePoro.new(recipe_data, country)
