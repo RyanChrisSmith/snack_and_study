@@ -21,10 +21,11 @@ RSpec.describe 'Learning Resources API' do
       expect(resources[:data][:attributes][:country]).to eq('laos')
 
       expect(resources[:data][:attributes]).to have_key(:video)
-      expect(resources[:data][:attributes][:video][0]).to have_key(:title)
-      expect(resources[:data][:attributes][:video][0][:title]).to be_a String
-      expect(resources[:data][:attributes][:video][0]).to have_key(:video_id)
-      expect(resources[:data][:attributes][:video][0][:video_id]).to be_a String
+
+      expect(resources[:data][:attributes][:video]).to have_key(:title)
+      expect(resources[:data][:attributes][:video][:title]).to be_a String
+      expect(resources[:data][:attributes][:video]).to have_key(:video_id)
+      expect(resources[:data][:attributes][:video][:video_id]).to be_a String
       expect(resources[:data][:attributes][:images]).to be_a Array
 
       resources[:data][:attributes][:images].each do |image|
@@ -33,6 +34,21 @@ RSpec.describe 'Learning Resources API' do
         expect(image).to have_key(:url)
         expect(image[:url]).to be_a String
       end
+    end
+
+    it 'returns empty objects if the search country doesnt exist', :vcr do
+      get '/api/v1/learning_resources?country=jlkjlkjlkasdfalskdjf'
+
+      expect(response).to be_successful
+      empty = JSON.parse(response.body, symbolize_names: true)
+
+      expect(empty).to have_key(:data)
+      expect(empty[:data]).to have_key(:id)
+      expect(empty[:data][:id]).to eq('null')
+      expect(empty[:data][:type]).to eq('learning_resource')
+      expect(empty[:data][:attributes][:country]).to eq('jlkjlkjlkasdfalskdjf')
+      expect(empty[:data][:attributes][:video]).to eq({})
+      expect(empty[:data][:attributes][:images]).to eq([])
     end
   end
 end
