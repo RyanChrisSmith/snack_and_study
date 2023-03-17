@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyDAwrxNaQyqZmcYZD_x2C4vscRrlwWTRas&maxResults=1&order=rating&part=snippet&q=thailand&safeSearch=strict&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 17 Mar 2023 16:27:16 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "Z-e4awW0RjOQTDEnSGRuUeY_Gcs",
+          "nextPageToken": "CAEQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 1000000,
+            "resultsPerPage": 1
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "NFwReidvzJVeYTZvZs6SR1m8DIo",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "NDf33fhwNko"
+              },
+              "snippet": {
+                "publishedAt": "2023-03-14T10:42:06Z",
+                "channelId": "UCoiCnYFpCc8IvRJEuoIg_wQ",
+                "title": "The Living Hell? Gastarbeiter in Thailand",
+                "description": "An die 4 Millionen Gast- oder Fremdarbeiter aus den Ländern Burma (Myanmar), Laos und Kambodscha sind in Thailand ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/NDf33fhwNko/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/NDf33fhwNko/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/NDf33fhwNko/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Siam Rider",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-03-14T10:42:06Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Fri, 17 Mar 2023 16:27:16 GMT
+recorded_with: VCR 6.1.0

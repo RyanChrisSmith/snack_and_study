@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyDAwrxNaQyqZmcYZD_x2C4vscRrlwWTRas&maxResults=1&order=rating&part=snippet&q=switzerland&safeSearch=strict&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 17 Mar 2023 17:57:55 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"NvzUoum8fLqXZ6_tBDwYu0SrsFU\",\n
+        \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
+        {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"j8t_oGYMXztgfuvC5lXWc6dVGMc\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"S2zQ1peO6uw\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2023-03-17T12:19:06Z\",\n        \"channelId\": \"UCv4DJy32vWu-MJ4PhkxhAHA\",\n
+        \       \"title\": \"Pahalgam, Kashmir ❤ | Day 5 | Kashmir in February | Betaab
+        Valley | Mini Switzerland of India \U0001F60D |\",\n        \"description\":
+        \"Hi Friends, We went to Kashmir in the month of February and it was one beautiful
+        trip! We have divided our vlogs in 6 parts. This is ...\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/S2zQ1peO6uw/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/S2zQ1peO6uw/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/S2zQ1peO6uw/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"Your Baniya Buddy\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2023-03-17T12:19:06Z\"\n      }\n    }\n
+        \ ]\n}\n"
+  recorded_at: Fri, 17 Mar 2023 17:57:55 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=10&query=switzerland
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Gq4m9zFQJg7LENZhJbeel9halsqwNURm3GsF6vbeK7K65U4F3nvSRDtn
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Mar 2023 17:57:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a971efecb06c7c9-DEN
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"051771a2879fb8f1aa30534bc8e14714"
+      Expires:
+      - Sat, 18 Mar 2023 17:57:55 GMT
+      Cf-Cache-Status:
+      - MISS
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '25000'
+      X-Ratelimit-Remaining:
+      - '24986'
+      X-Ratelimit-Reset:
+      - '1681663842'
+      X-Request-Id:
+      - e303c5f4-0435-4411-a0cb-fe739d5e3f45
+      X-Runtime:
+      - '0.065187'
+      X-Server:
+      - anteater
+      Set-Cookie:
+      - __cf_bm=tvK4ubImZsqhhOQJ0wB7mW7_hlrNRCskNxungDA2kMg-1679075875-0-AWY/PTMqIS0fmkD8OC00tP5d3MN2VmhNEQ+pEBUPqYoDk2zQNMfarklB7QjlNE77KfrkMH8h0vtklDKWZInaUmw=;
+        path=/; expires=Fri, 17-Mar-23 18:27:55 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"per_page":10,"photos":[{"id":1586298,"width":3520,"height":4400,"url":"https://www.pexels.com/photo/brown-wooden-house-and-mountain-reflecting-on-lake-1586298/","photographer":"Ricardo
+        Esquivel","photographer_url":"https://www.pexels.com/@rickyrecap","photographer_id":722822,"avg_color":"#577E8A","src":{"original":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg","large2x":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Brown
+        Wooden House and Mountain Reflecting on Lake"},{"id":773471,"width":5132,"height":3421,"url":"https://www.pexels.com/photo/train-passing-773471/","photographer":"H.
+        Emre","photographer_url":"https://www.pexels.com/@hebaysal","photographer_id":111534,"avg_color":"#615C56","src":{"original":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg","large2x":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Train
+        passing"},{"id":922978,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/brown-house-under-blue-skies-photography-922978/","photographer":"Tranmautritam","photographer_url":"https://www.pexels.com/@tranmautritam","photographer_id":8509,"avg_color":"#85876B","src":{"original":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg","large2x":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Brown
+        House Under Blue Skies Photography"},{"id":733148,"width":5065,"height":3250,"url":"https://www.pexels.com/photo/scenic-view-of-the-mountains-733148/","photographer":"Robert  Stokoe","photographer_url":"https://www.pexels.com/@robert-stokoe-105922","photographer_id":105922,"avg_color":"#667586","src":{"original":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg","large2x":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/733148/pexels-photo-733148.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Scenic
+        View of the Mountains"},{"id":2399391,"width":3789,"height":5500,"url":"https://www.pexels.com/photo/photo-of-people-near-clock-tower-during-daytime-2399391/","photographer":"Louis","photographer_url":"https://www.pexels.com/@suissounet","photographer_id":465924,"avg_color":"#757471","src":{"original":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg","large2x":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2399391/pexels-photo-2399391.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        of People Near Clock Tower During Daytime"},{"id":2444403,"width":3264,"height":4080,"url":"https://www.pexels.com/photo/person-walking-on-pathway-2444403/","photographer":"Chris
+        Czermak","photographer_url":"https://www.pexels.com/@chris-czermak-1280625","photographer_id":1280625,"avg_color":"#727A54","src":{"original":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg","large2x":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Person
+        Walking on Pathway"},{"id":1291766,"width":3464,"height":2309,"url":"https://www.pexels.com/photo/silver-vehicle-on-concrete-arch-bridge-1291766/","photographer":"Matheus
+        Guimarães","photographer_url":"https://www.pexels.com/@ozrenildo","photographer_id":57062,"avg_color":"#5F6D58","src":{"original":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg","large2x":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Silver
+        Vehicle on Concrete Arch Bridge"},{"id":415958,"width":2000,"height":1328,"url":"https://www.pexels.com/photo/alps-clouds-daylight-foggy-415958/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#6D8897","src":{"original":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg","large2x":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/415958/pexels-photo-415958.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Birds
+        Eye View of House on Hill over White Clouds"},{"id":1608966,"width":3966,"height":2475,"url":"https://www.pexels.com/photo/green-trees-1608966/","photographer":"Rajesh
+        Rathod","photographer_url":"https://www.pexels.com/@rajesh-rathod-755284","photographer_id":755284,"avg_color":"#6C766C","src":{"original":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg","large2x":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1608966/pexels-photo-1608966.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Green
+        Trees"},{"id":2779863,"width":4194,"height":2996,"url":"https://www.pexels.com/photo/photo-of-buildings-near-body-of-water-2779863/","photographer":"Nextvoyage","photographer_url":"https://www.pexels.com/@nextvoyage","photographer_id":146718,"avg_color":"#439BBC","src":{"original":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg","large2x":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2779863/pexels-photo-2779863.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        of Buildings Near Body of Water"}],"total_results":736,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=10\u0026query=switzerland"}'
+  recorded_at: Fri, 17 Mar 2023 17:57:55 GMT
+recorded_with: VCR 6.1.0

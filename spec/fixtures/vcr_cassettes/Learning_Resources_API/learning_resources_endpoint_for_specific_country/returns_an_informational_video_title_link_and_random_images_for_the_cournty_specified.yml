@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyDAwrxNaQyqZmcYZD_x2C4vscRrlwWTRas&maxResults=1&order=rating&part=snippet&q=laos&safeSearch=strict&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 17 Mar 2023 18:08:17 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"d6AOiq2DjoCSZ-jmlgToLPO53ik\",\n
+        \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
+        {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"w94SEMfGSR6S9HtcGvc3kAx_G8I\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"jY-uTq1NtuQ\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2023-01-06T13:00:25Z\",\n        \"channelId\": \"UCRatFUBKehnJOBtrG6umGyg\",\n
+        \       \"title\": \"Laos \U0001F1F1\U0001F1E6 • Teil 2 • Der Mekong und der
+        Wasserfall \U0001F3DE️ • Weltreise Vlog #11\",\n        \"description\": \"Im
+        zweiten Teil unserer Laos-Reise fuhren wir von Muang Ngoy nach Luang Prabang
+        - der ehemaligen Hauptstadt direkt am ...\",\n        \"thumbnails\": {\n
+        \         \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/jY-uTq1NtuQ/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/jY-uTq1NtuQ/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/jY-uTq1NtuQ/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"Denise & Matze • Kokoskompass\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2023-01-06T13:00:25Z\"\n      }\n    }\n
+        \ ]\n}\n"
+  recorded_at: Fri, 17 Mar 2023 18:08:17 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=10&query=laos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Gq4m9zFQJg7LENZhJbeel9halsqwNURm3GsF6vbeK7K65U4F3nvSRDtn
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Mar 2023 18:08:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a972e2e0bcc1f38-DEN
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '58'
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"9e8c297096cc4c5d27259cd2569f38da"
+      Expires:
+      - Sat, 18 Mar 2023 18:08:17 GMT
+      Cf-Cache-Status:
+      - HIT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '25000'
+      X-Ratelimit-Remaining:
+      - '24981'
+      X-Ratelimit-Reset:
+      - '1681663842'
+      X-Request-Id:
+      - 956ee0ee-9678-4549-b6b0-b85286c7e85b
+      X-Runtime:
+      - '0.036937'
+      X-Server:
+      - caterpillar
+      Set-Cookie:
+      - __cf_bm=LH7.9j1dwizdeNCsAbd9Bn_Q2Ko37kcSQ8ckGrJJSTw-1679076497-0-AfUi88BwROA4cc7cCytTGs+O5JmbytUXtI1dHr3wDgSMnaIyvOg1Nc3Sb+VtkM4t3TGAhe2RyiHgzTECThuqCYo=;
+        path=/; expires=Fri, 17-Mar-23 18:38:17 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"per_page":10,"photos":[{"id":924631,"width":5184,"height":3456,"url":"https://www.pexels.com/photo/stone-castle-wall-surrounded-with-green-grass-924631/","photographer":"Suraphat
+        Nuea-on","photographer_url":"https://www.pexels.com/@suraphat","photographer_id":327013,"avg_color":"#9F9F8F","src":{"original":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg","large2x":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/924631/pexels-photo-924631.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Stone
+        Castle Wall Surrounded With Green Grass"},{"id":1385474,"width":5000,"height":3750,"url":"https://www.pexels.com/photo/photo-of-waterfalls-1385474/","photographer":"Simon
+        Berger","photographer_url":"https://www.pexels.com/@8moments","photographer_id":181980,"avg_color":"#4E5142","src":{"original":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg","large2x":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1385474/pexels-photo-1385474.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        Of Waterfalls"},{"id":460223,"width":6000,"height":4000,"url":"https://www.pexels.com/photo/agriculture-animals-asia-buffalo-460223/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#AC906F","src":{"original":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg","large2x":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/460223/pexels-photo-460223.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Two
+        Water Buffalos"},{"id":1105525,"width":3300,"height":2328,"url":"https://www.pexels.com/photo/house-near-lake-1105525/","photographer":"Simon
+        Berger","photographer_url":"https://www.pexels.com/@8moments","photographer_id":181980,"avg_color":"#6A817D","src":{"original":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg","large2x":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1105525/pexels-photo-1105525.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"House
+        Near Lake"},{"id":777150,"width":3984,"height":2656,"url":"https://www.pexels.com/photo/woman-standing-on-edge-of-wall-777150/","photographer":"seesouk
+        souvannaphongsay","photographer_url":"https://www.pexels.com/@flypicture","photographer_id":153109,"avg_color":"#838A83","src":{"original":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg","large2x":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/777150/pexels-photo-777150.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Woman
+        Standing On Edge Of Wall"},{"id":777155,"width":3984,"height":2656,"url":"https://www.pexels.com/photo/woman-sitting-using-phone-777155/","photographer":"seesouk
+        souvannaphongsay","photographer_url":"https://www.pexels.com/@flypicture","photographer_id":153109,"avg_color":"#A09893","src":{"original":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg","large2x":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/777155/pexels-photo-777155.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Woman
+        Sitting Using Phone "},{"id":1237760,"width":3200,"height":2400,"url":"https://www.pexels.com/photo/photo-of-brige-1237760/","photographer":"icon0.com","photographer_url":"https://www.pexels.com/@freeimages9","photographer_id":36345,"avg_color":"#918F83","src":{"original":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg","large2x":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1237760/pexels-photo-1237760.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        Of Brige"},{"id":924633,"width":3456,"height":5184,"url":"https://www.pexels.com/photo/pathway-covered-with-green-grass-924633/","photographer":"Suraphat
+        Nuea-on","photographer_url":"https://www.pexels.com/@suraphat","photographer_id":327013,"avg_color":"#919363","src":{"original":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg","large2x":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/924633/pexels-photo-924633.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Pathway
+        Covered With Green Grass"},{"id":4369706,"width":6720,"height":4480,"url":"https://www.pexels.com/photo/decorated-old-buddhist-church-exterior-in-laos-4369706/","photographer":"竟傲
+        汤","photographer_url":"https://www.pexels.com/@tangjingao","photographer_id":2821309,"avg_color":"#82807E","src":{"original":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg","large2x":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/4369706/pexels-photo-4369706.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"From
+        below of ancient masonry Asian temple facade with ornament on roof and arched
+        entrance under cloudy sky"},{"id":6861657,"width":3024,"height":3779,"url":"https://www.pexels.com/photo/drone-shot-of-a-hot-air-balloon-above-a-city-6861657/","photographer":"Pauline
+        Tan","photographer_url":"https://www.pexels.com/@pauline-tan-28794606","photographer_id":28794606,"avg_color":"#758E9B","src":{"original":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg","large2x":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/6861657/pexels-photo-6861657.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Drone
+        Shot of a Hot Air Balloon Above a City"}],"total_results":40,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=10\u0026query=laos"}'
+  recorded_at: Fri, 17 Mar 2023 18:08:17 GMT
+recorded_with: VCR 6.1.0
