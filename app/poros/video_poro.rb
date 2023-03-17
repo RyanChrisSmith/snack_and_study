@@ -3,7 +3,7 @@ class VideoPoro
               :video_id
 
   def initialize(video_data)
-    @title = video_data[:items][0][:snippet][:title]
-    @video_id = video_data[:items][0][:id][:videoId]
+    @title = video_data[:snippet][:title]
+    @video_id = video_data[:id][:videoId]
   end
 end

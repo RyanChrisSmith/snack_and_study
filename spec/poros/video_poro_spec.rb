@@ -2,57 +2,27 @@ require 'rails_helper'
 
 RSpec.describe VideoPoro do
   it 'returns PORO from the api call' do
-    video_data = {
-      "kind": 'youtube#searchListResponse',
-      "etag": 'Z-e4awW0RjOQTDEnSGRuUeY_Gcs',
-      "nextPageToken": 'CAEQAA',
-      "regionCode": 'US',
-      "pageInfo": {
-        "totalResults": 1000000,
-        "resultsPerPage": 1
-      },
-      "items": [
-        {
-          "kind": 'youtube#searchResult',
-          "etag": 'NFwReidvzJVeYTZvZs6SR1m8DIo',
-          "id": {
-            "kind": 'youtube#video',
-            "videoId": 'NDf33fhwNko'
-          },
-          "snippet": {
-            "publishedAt": '2023-03-14T10:42:06Z',
-            "channelId": 'UCoiCnYFpCc8IvRJEuoIg_wQ',
-            "title": 'The Living Hell? Gastarbeiter in Thailand',
-            "description": 'An die 4 Millionen Gast- oder Fremdarbeiter aus den Ländern Burma (Myanmar), Laos und Kambodscha sind in Thailand ...',
-            "thumbnails": {
-              "default": {
-                "url": 'https://i.ytimg.com/vi/NDf33fhwNko/default.jpg',
-                "width": 120,
-                "height": 90
-              },
-              "medium": {
-                  "url": 'https://i.ytimg.com/vi/NDf33fhwNko/mqdefault.jpg',
-                  "width": 320,
-                  "height": 180
-                },
-              "high": {
-                  "url": 'https://i.ytimg.com/vi/NDf33fhwNko/hqdefault.jpg',
-                  "width": 480,
-                  "height": 360
-                }
-            },
-            "channelTitle": 'Siam Rider',
-            "liveBroadcastContent": 'none',
-            "publishTime": '2023-03-14T10:42:06Z'
-          }
-        }
-      ]
-    }
+    video_data = {:kind=>"youtube#searchResult",
+      :etag=>"7SF6tbP9Tdwqwjl7vm8sBI2mijg",
+      :id=>{:kind=>"youtube#video", :videoId=>"OG_gKe9M7sY"},
+      :snippet=>
+      {:publishedAt=>"2023-03-17T10:44:37Z",
+        :channelId=>"UC22f35dl6SIRTcamzjxVMUA",
+        :title=>"Exploring Krabi In Thailand",
+        :description=>
+        "Krabi with its tourmaline seas, white-sand beaches, mangrove forests, limestone rock formations, hidden caves, and secret ...",
+        :thumbnails=>
+        {:default=>{:url=>"https://i.ytimg.com/vi/OG_gKe9M7sY/default.jpg", :width=>120, :height=>90},
+          :medium=>{:url=>"https://i.ytimg.com/vi/OG_gKe9M7sY/mqdefault.jpg", :width=>320, :height=>180},
+          :high=>{:url=>"https://i.ytimg.com/vi/OG_gKe9M7sY/hqdefault.jpg", :width=>480, :height=>360}},
+        :channelTitle=>"Travel+Leisure India-South Asia",
+        :liveBroadcastContent=>"none",
+        :publishTime=>"2023-03-17T10:44:37Z"}}
 
     video = VideoPoro.new(video_data)
 
     expect(video).to be_a VideoPoro
-    expect(video.title).to eq(video_data[:items][0][:snippet][:title])
-    expect(video.video_id).to eq(video_data[:items][0][:id][:videoId])
+    expect(video.title).to eq(video_data[:snippet][:title])
+    expect(video.video_id).to eq(video_data[:id][:videoId])
   end
 end
