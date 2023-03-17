@@ -7,7 +7,8 @@ class RecipesService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.conn 
+  private
+  def self.conn
     Faraday.new(url: 'https://api.edamam.com') do |f|
       f.params['type'] = 'public'
       f.params['app_id'] = ENV['recipe_id']
