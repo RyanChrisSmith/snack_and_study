@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=10&query=canada
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Gq4m9zFQJg7LENZhJbeel9halsqwNURm3GsF6vbeK7K65U4F3nvSRDtn
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Mar 2023 17:03:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a96cff23d621f2d-DEN
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '289'
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"76bd74655872ce9383ea80683609c12a"
+      Expires:
+      - Sat, 18 Mar 2023 17:03:57 GMT
+      Cf-Cache-Status:
+      - HIT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '25000'
+      X-Ratelimit-Remaining:
+      - '24991'
+      X-Ratelimit-Reset:
+      - '1681663842'
+      X-Request-Id:
+      - 12f3c2a4-6c33-4df1-9972-190494d62a39
+      X-Runtime:
+      - '0.151862'
+      X-Server:
+      - caterpillar
+      Set-Cookie:
+      - __cf_bm=l4DL_p7tLJyyOqcg.UuS9tp3K_XBlfI1tCNeDq3LH1Y-1679072637-0-Aa83ZHAsn4AnVLsFM6LqaeHYnQEldqwGeHoZX/v0o8iwwgfVg9Q8OpTKytN2Kw/d/8kCgblvYN+Bd0yYLTdFIcw=;
+        path=/; expires=Fri, 17-Mar-23 17:33:57 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"per_page":10,"photos":[{"id":11259542,"width":4160,"height":6240,"url":"https://www.pexels.com/photo/a-moving-train-on-a-snow-covered-ground-near-the-snow-covered-trees-and-mountains-11259542/","photographer":"ConfinedRiley","photographer_url":"https://www.pexels.com/@confinedriley","photographer_id":1734975,"avg_color":"#A3ABB6","src":{"original":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg","large2x":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/11259542/pexels-photo-11259542.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"A
+        Moving Train on a Snow Covered Ground Near the Snow Covered Trees and Mountains"},{"id":11449484,"width":3886,"height":5880,"url":"https://www.pexels.com/photo/vancouver-city-on-a-foggy-morning-11449484/","photographer":"Khantushig
+        Khosbayar","photographer_url":"https://www.pexels.com/@khantushig-khosbayar-194759130","photographer_id":194759130,"avg_color":"#293C4A","src":{"original":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg","large2x":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/11449484/pexels-photo-11449484.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Vancouver
+        City on a Foggy Morning"},{"id":2917182,"width":3648,"height":5472,"url":"https://www.pexels.com/photo/beige-sun-hat-2917182/","photographer":"Andre
+        Furtado","photographer_url":"https://www.pexels.com/@andre-furtado-43594","photographer_id":43594,"avg_color":"#AB766D","src":{"original":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg","large2x":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2917182/pexels-photo-2917182.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Beige
+        Sun Hat"},{"id":3490963,"width":3024,"height":4032,"url":"https://www.pexels.com/photo/waterfalls-under-blue-sky-and-white-clouds-3490963/","photographer":"Anthony
+        Rodriguez","photographer_url":"https://www.pexels.com/@anthony-rodriguez-1836670","photographer_id":1836670,"avg_color":"#829DAD","src":{"original":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg","large2x":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3490963/pexels-photo-3490963.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Waterfalls
+        Under Blue Sky and White Clouds"},{"id":3511543,"width":6000,"height":4000,"url":"https://www.pexels.com/photo/photo-of-seaside-during-daytime-3511543/","photographer":"Bekir
+        Donmez","photographer_url":"https://www.pexels.com/@bekirdonmeez","photographer_id":108961,"avg_color":"#727073","src":{"original":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg","large2x":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3511543/pexels-photo-3511543.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        Of Seaside During Daytime"},{"id":3671394,"width":3830,"height":2628,"url":"https://www.pexels.com/photo/city-skyline-near-body-of-water-during-night-time-3671394/","photographer":"Nork
+        Photography","photographer_url":"https://www.pexels.com/@norkphotography","photographer_id":1181178,"avg_color":"#82859B","src":{"original":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg","large2x":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3671394/pexels-photo-3671394.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"City
+        Skyline Near Body of Water during Night Time"},{"id":7069270,"width":3000,"height":4500,"url":"https://www.pexels.com/photo/a-person-holding-a-canadian-paper-flag-7069270/","photographer":"Alesia  Kozik","photographer_url":"https://www.pexels.com/@alesiakozik","photographer_id":5767085,"avg_color":"#D0BDB9","src":{"original":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg","large2x":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/7069270/pexels-photo-7069270.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"A
+        Person Holding a Canadian Paper Flag"},{"id":3694352,"width":3648,"height":5472,"url":"https://www.pexels.com/photo/a-man-crossing-the-road-during-daylight-3694352/","photographer":"Andre
+        Furtado","photographer_url":"https://www.pexels.com/@andre-furtado-43594","photographer_id":43594,"avg_color":"#787271","src":{"original":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg","large2x":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3694352/pexels-photo-3694352.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"A
+        Man Crossing The Road During Daylight"},{"id":3813320,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/people-walking-near-train-3813320/","photographer":"Andre
+        Furtado","photographer_url":"https://www.pexels.com/@andre-furtado-43594","photographer_id":43594,"avg_color":"#53504D","src":{"original":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg","large2x":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"People
+        Walking Near Train"},{"id":2773578,"width":3200,"height":2005,"url":"https://www.pexels.com/photo/cityscape-near-body-of-water-2773578/","photographer":"James
+        Wheeler","photographer_url":"https://www.pexels.com/@souvenirpixels","photographer_id":558609,"avg_color":"#373E43","src":{"original":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg","large2x":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2773578/pexels-photo-2773578.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Cityscape
+        Near Body Of Water"}],"total_results":2944,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=10\u0026query=canada"}'
+  recorded_at: Fri, 17 Mar 2023 17:03:57 GMT
+recorded_with: VCR 6.1.0

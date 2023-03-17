@@ -4,7 +4,7 @@ class VideoService
     response = conn.get('youtube/v3/search?') do |req|
       req.params['q'] = "#{country}"
     end
-    result = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
