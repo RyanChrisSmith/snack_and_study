@@ -4,7 +4,7 @@ class ImagesService
     response = conn.get('/v1/search?') do |req|
       req.params['query'] = "#{country}"
     end
-    result = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
@@ -15,5 +15,3 @@ class ImagesService
     end
   end
 end
-
-# https://api.pexels.com/v1/search?query=thailand&per_page=10
